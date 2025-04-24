@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoZone - Cửa hàng điện tử</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-body">
+
+    <header class="site-header">
+        <div class="top-header container-fluid">
+            <a href="/" class="logo-link">
+                <div class="logo">Mono<span>Zone</span></div>
+            </a>
+            <div class="search-bar">
+                <input type="search" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+                <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-actions">
+                <div class="action-item" id="show-login" role="button" tabindex="0" aria-label="Mở menu tài khoản">
+                    <i class="fas fa-user"></i>
+                    <span class="action-label">Tài khoản</span>
+                </div>
+                <div class="action-item" id="show-wishlist" role="button" tabindex="0" aria-label="Xem danh sách yêu thích">
+                    <i class="far fa-heart"></i>
+                    <span class="action-label">Yêu thích</span>
+                    <span class="badge" id="wishlist-count">0</span>
+                </div>
+                <div class="action-item" id="cart-icon" role="button" tabindex="0" aria-label="Mở giỏ hàng">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="action-label">Giỏ hàng</span>
+                    <span class="badge" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav container-fluid">
+            <ul>
+                <li><a href="main.html" class="nav-link active">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Sản phẩm <i class="fas fa-chevron-down fa-xs"></i></a>
+                    <div class="dropdown-content">
+                        <div class="category-group">
+                            <h3>Điện thoại & Tablet</h3>
+                            <ul>
+                                <li><a href="/category/dien-thoai">Điện thoại</a></li>
+                                <li><a href="/category/may-tinh-bang">Máy tính bảng</a></li>
+                                <li><a href="/category/phu-kien-dien-thoai">Phụ kiện điện thoại</a></li>
+                            </ul>
+                        </div>
+                        <div class="category-group">
+                            <h3>Laptop & PC</h3>
+                            <ul>
+                                <li><a href="/category/laptop">Laptop</a></li>
+                                <li><a href="/category/may-tinh-de-ban">Máy tính</a></li>
+                                <li><a href="/category/linh-kien-pc">Linh kiện PC</a></li>
+                                <li><a href="/category/phu-kien-laptop">Phụ kiện Laptop</a></li>
+                            </ul>
+                        </div>
+                        <div class="category-group">
+                            <h3>Thiết bị điện tử</h3>
+                            <ul>
+                                <li><a href="/category/tivi-man-hinh">Tivi</a></li>
+                                <li><a href="/category/thiet-bi-am-thanh">Thiết bị âm thanh</a></li>
+                                <li><a href="/category/may-anh">Máy ảnh</a></li>
+                                <li><a href="/category/thiet-bi-deo">Thiết bị đeo</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li><a href="/khuyen-mai" class="nav-link">Khuyến mãi</a></li>
+                <li><a href="/san-pham-moi" class="nav-link">Sản phẩm mới</a></li>
+                <li><a href="/tin-tuc" class="nav-link">Tin công nghệ</a></li>
+                <li><a href="/lien-he" class="nav-link">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slide-container">
+            <div class="poster slide">
+                 <div class="poster-right">
+                     <img id="picture" src="/Electronic/IMAGES/dongho.jpg" alt="poster">
+                 </div>
+             </div>
+         
+             <div class="poster slide">
+                  <div class="poster-right">
+                      <img id="picture" src="/Electronic/IMAGES/hi.jpg" alt="poster">
+                  </div>
+              </div>
+        </div>
+
+        <section class="featured-categories container section-padding">
+            <h2 class="section-title">Khám Phá Danh Mục</h2>
+            <div class="category-grid">
+                <a href="/category/dien-thoai" class="category-card">
+                    <div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Điện thoại</h3>
+                </a>
+                <a href="/category/laptop" class="category-card">
+                    <div class="category-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>Laptop</h3>
+                </a>
+                <a href="/category/thiet-bi-am-thanh" class="category-card">
+                    <div class="category-icon"><i class="fas fa-headphones"></i></div>
+                    <h3>Âm thanh</h3>
+                </a>
+                <a href="/category/may-anh" class="category-card">
+                    <div class="category-icon"><i class="fas fa-camera-retro"></i></div>
+                    <h3>Máy ảnh</h3>
+                </a>
+                 <a href="/category/tivi-man-hinh" class="category-card">
+                    <div class="category-icon"><i class="fas fa-tv"></i></div>
+                    <h3>TV & Màn hình</h3>
+                </a>
+                 <a href="/category/thiet-bi-deo" class="category-card">
+                    <div class="category-icon"><i class="fas fa-stopwatch-20"></i></div>
+                    <h3>Thiết bị đeo</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="flash-sale-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Flash Sale</h2>
+                    <div class="countdown" id="sale-countdown">
+                        <span>Kết thúc trong:</span>
+                        <span class="time-unit">
+                            <span class="time" id="hours">00</span><span class="label">h</span>
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="time-unit">
+                            <span class="time" id="minutes">00</span><span class="label">m</span>
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="time-unit">
+                            <span class="time" id="seconds">00</span><span class="label">s</span>
+                        </span>
+                    </div>
+                     <a href="/flash-sale" class="btn-link">Xem tất cả <i class="fas fa-arrow-right fa-xs"></i></a>
+                </div>
+                <div class="product-grid grid-cols-5" id="flash-sale-products">
+                    </div>
+            </div>
+        </section>
+
+        <section class="new-arrivals container section-padding">
+            <h2 class="section-title">Sản Phẩm Mới Nhất</h2>
+            <div class="product-grid grid-cols-4" id="new-arrivals-grid">
+                 </div>
+            <div class="center-button mt-5">
+                <a href="/san-pham-moi" class="btn btn-outline-dark">Xem thêm sản phẩm mới</a>
+            </div>
+        </section>
+
+        <section class="features-section bg-light section-padding">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-truck-fast"></i>
+                        <h3>Giao hàng siêu tốc</h3>
+                        <p>Nhận hàng nhanh chóng trong ngày</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Bảo hành chính hãng</h3>
+                        <p>Yên tâm sử dụng sản phẩm</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-undo"></i>
+                        <h3>Đổi trả linh hoạt</h3>
+                        <p>Trong vòng 7 ngày dễ dàng</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Hỗ trợ tận tâm</h3>
+                        <p>Giải đáp mọi thắc mắc 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brands-section container section-padding">
+            <h2 class="section-title">Đối Tác Hàng Đầu</h2>
+            <div class="brand-slider">
+                <div class="brand-slider-track">
+                  <div class="brand-item"><img src="https://placehold.co/150x60?text=Apple" alt="Apple"></div>
+                  <div class="brand-item"><img src="https://placehold.co/150x60?text=Samsung" alt="Samsung"></div>
+                  <div class="brand-item"><img src="https://placehold.co/150x60?text=Sony" alt="Sony"></div>
+                  <div class="brand-item"><img src="https://placehold.co/150x60?text=Dell" alt="Dell"></div>
+                  <div class="brand-item"><img src="https://placehold.co/150x60?text=LG" alt="LG"></div>
+                  <div class="brand-item"><img src="https://placehold.co/150x60?text=Xiaomi" alt="Xiaomi"></div>
+                </div>
+              </div>
+              
+        </section>
+
+        <section class="newsletter-section bg-dark">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Đừng Bỏ Lỡ Tin Tức Mới</h2>
+                    <p>Đăng ký để nhận cập nhật về sản phẩm và ưu đãi độc quyền.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" id="newsletter-email-input" placeholder="Nhập địa chỉ email của bạn" required aria-label="Địa chỉ email">
+                        <button type="submit" class="btn btn-light">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top container">
+            <div class="footer-column">
+                <h3>Về MonoZone</h3>
+                <ul>
+                    <li><a href="/gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="/cua-hang">Hệ thống cửa hàng</a></li>
+                    <li><a href="/tuyen-dung">Tuyển dụng</a></li>
+                    <li><a href="/tin-tuc">Tin công nghệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="/chinh-sach/bao-hanh">Chính sách bảo hành</a></li>
+                    <li><a href="/chinh-sach/doi-tra">Chính sách đổi trả</a></li>
+                    <li><a href="/chinh-sach/giao-hang">Chính sách giao hàng</a></li>
+                    <li><a href="/chinh-sach/bao-mat">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Hỗ trợ</h3>
+                <ul>
+                    <li><a href="/huong-dan/mua-hang">Hướng dẫn mua hàng online</a></li>
+                    <li><a href="/phuong-thuc-thanh-toan">Phương thức thanh toán</a></li>
+                    <li><a href="/faq">Câu hỏi thường gặp</a></li>
+                    <li><a href="/tra-cuu-don-hang">Tra cứu đơn hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-info">
+                <h3>Liên hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i><span>1 Minimalist St, Design City, VN</span></p>
+                <p><i class="fas fa-phone"></i><a href="tel:18000000">1800 0000</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:support@monozone.vn">support@monozone.vn</a></p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© <span id="current-year"></span> MonoZone. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fab fa-cc-jcb" title="JCB"></i>
+                    <i class="fas fa-money-bill-wave" title="Tiền mặt khi nhận hàng"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="login-modal" aria-labelledby="login-modal-title" aria-hidden="true" role="dialog">
+        <div class="modal-content" role="document">
+            <button class="close-modal" aria-label="Đóng hộp thoại"><i class="fas fa-times"></i></button>
+            <div class="modal-tabs">
+                <button class="tab-btn active" data-tab="login" role="tab" aria-controls="login-tab" aria-selected="true">Đăng nhập</button>
+                <button class="tab-btn" data-tab="register" role="tab" aria-controls="register-tab" aria-selected="false">Đăng ký</button>
+            </div>
+            <div class="tab-content" id="login-tab" role="tabpanel" aria-labelledby="login-tab-btn">
+                <form id="login-form" novalidate>
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Mật khẩu</label>
+                        <input type="password" id="login-password" required autocomplete="current-password">
+                    </div>
+                    <div class="form-footer">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Ghi nhớ tôi</label>
+                        </div>
+                        <a href="/quen-mat-khau" class="forgot-password">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-full">Đăng nhập</button>
+                </form>
+            </div>
+            <div class="tab-content hidden" id="register-tab" role="tabpanel" aria-labelledby="register-tab-btn" hidden>
+                <form id="register-form" novalidate>
+                    <div class="form-group">
+                        <label for="register-name">Họ và tên</label>
+                        <input type="text" id="register-name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-phone">Số điện thoại</label>
+                        <input type="tel" id="register-phone" required autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Mật khẩu</label>
+                        <input type="password" id="register-password" required autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Xác nhận mật khẩu</label>
+                        <input type="password" id="register-confirm-password" required autocomplete="new-password">
+                    </div>
+                    <div class="agree-terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Tôi đồng ý với <a href="/dieu-khoan" target="_blank">Điều khoản dịch vụ</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-full mt-4">Đăng ký</button>
+                </form>
+            </div>
+            <div class="social-login">
+                <p>Hoặc tiếp tục bằng</p>
+                <div class="social-buttons">
+                    <button class="btn-social btn-google" aria-label="Đăng nhập bằng Google"><i class="fab fa-google"></i> Google</button>
+                    <button class="btn-social btn-facebook" aria-label="Đăng nhập bằng Facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal product-modal" id="quick-view-modal" aria-labelledby="quick-view-modal-title" aria-hidden="true" role="dialog">
+        <div class="modal-content" role="document">
+            <button class="close-modal" aria-label="Đóng xem nhanh"><i class="fas fa-times"></i></button>
+            <div class="product-modal-container" id="quick-view-content">
+                </div>
+        </div>
+    </div>
+
+    <aside class="cart-sidebar" id="cart-sidebar" aria-labelledby="cart-sidebar-title" aria-hidden="true" role="dialog">
+        <div class="cart-header">
+            <h3 id="cart-sidebar-title">Giỏ hàng</h3>
+            <button class="close-modal" id="close-cart" aria-label="Đóng giỏ hàng"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart" id="empty-cart-message">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Giỏ hàng của bạn đang trống</p>
+                <button class="btn btn-dark" id="shop-now-btn">Mua sắm ngay</button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <span id="cart-total-amount">0₫</span>
+            </div>
+            <a href="/thanh-toan" class="btn btn-dark btn-full btn-checkout">Tiến hành thanh toán</a>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay" tabindex="-1"></div>
+
+    <div class="toast-container" id="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
