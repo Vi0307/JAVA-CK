@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admins - TechNo</title>
+    <link rel="stylesheet" href="css/core-styles.css">
+     <link rel="stylesheet" href="css/admin.css">
+     <link rel="icon" href="/IMAGES/lg.png">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div class="bg-body">
+
+    <header class="site-header">
+        <div class="top-header container-fluid">
+            <a href="index.html" class="logo-link">
+                <div class="logo">Tech<span>No</span></div>
+            </a>
+            <div class="search-bar">
+                <input type="search" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+                <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-actions">
+              <a href="/login-register.html">
+                <div class="action-item" id="show-login">
+                    <i class="fas fa-user"></i>
+                    <span class="action-label">Tài khoản</span>
+                </div>
+              </a>
+            </div>
+        </div>
+         <nav class="main-nav container-fluid">
+            <ul>
+                <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+                <li><a href="about.html" class="nav-link">Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link active">Sản phẩm <i class="fas fa-chevron-down fa-xs"></i></a>
+                    <div class="dropdown-content">
+                        <div class="category-group">
+                            <h3>Điện thoại & Tablet</h3>
+                            <ul>
+                                <li><a href="danhmuc.html">Điện thoại</a></li>
+                                <li><a href="danhmuc.html">Máy tính bảng</a></li>
+                                <li><a href="danhmuc.html">Phụ kiện điện thoại</a></li>
+                            </ul>
+                        </div>
+                        <div class="category-group">
+                            <h3>Laptop & PC</h3>
+                            <ul>
+                                <li><a href="danhmuc.html">Laptop</a></li>
+                                <li><a href="danhmuc.html">Máy tính</a></li>
+                                <li><a href="danhmuc.html">Linh kiện PC</a></li>
+                                <li><a href="danhmuc.html">Phụ kiện Laptop</a></li>
+                            </ul>
+                        </div>
+                        <div class="category-group">
+                            <h3>Thiết bị điện tử</h3>
+                            <ul>
+                                <li><a href="danhmuc.html">Tivi</a></li>
+                                <li><a href="danhmuc.html">Thiết bị âm thanh</a></li>
+                                <li><a href="danhmuc.html">Máy ảnh</a></li>
+                                <li><a href="danhmuc.html">Thiết bị đeo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="promotions.html" class="nav-link">Khuyến mãi</a></li>
+                <li><a href="new-products.html" class="nav-link">Sản phẩm mới</a></li>
+                <li><a href="news.html" class="nav-link">Tin công nghệ</a></li>
+                <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="wrapper"> 
+          <div class="sidebar">
+            <h2>Admin</h2>
+            <ul>
+                <li class="active"><a href="/admins.html" style="color:#ffffffff"><span class="material-icons">add_box</span>Thêm sản phẩm</a></li>
+                <li><a href="adminSanPham.html"><span class="material-icons">inventory</span>Sản phẩm</a></li>
+                <li><a href="UserAd.html"><span class="material-icons">people</span>Người dùng</a></li>
+                <li><a href="AdDH.html"><span class="material-icons">inventory_2</span>Đơn hàng</a></li>
+            </ul>
+            </div>
+          <main class="main-content">
+            <div class="form-container">
+              <h2>Thêm sản phẩm</h2>
+              <form>
+                <div class="form-group">
+                  <label for="ten">Tên sản phẩm:</label>
+                  <input type="text" id="ten" placeholder="Tên sản phẩm" />
+                </div>
+      
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="gia">Giá bán:</label>
+                    <input type="text" id="gia" placeholder="Giá bán" />
+                  </div>
+                  <div class="form-group">
+                    <label for="gia-km">Giá khuyến mãi:</label>
+                    <input type="text" id="gia-km" placeholder="Giá khuyến mãi" />
+                  </div>
+                  <div class="form-group">
+                    <label for="danh-muc">Danh mục sản phẩm:</label>
+                    <select id="danh-muc">
+                      <option>Tên danh mục</option>
+                      <option>Tên danh mục</option>
+                      <option>Tên danh mục</option>
+                    </select>
+                  </div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="mo-ta">Mô tả sản phẩm:</label>
+                  <div class="editor-toolbar">
+                    <button type="button"><b>B</b></button>
+                    <button type="button"><i>I</i></button>
+                    <button type="button">🔗</button>
+                    <button type="button">📷</button>
+                    <button type="button">🗂️</button>
+                    <button type="button">☰</button>
+                  </div>
+                  <textarea id="mo-ta" rows="5" placeholder="Mô tả sản phẩm"></textarea>
+                </div>
+      
+                <div class="form-actions">
+                  <button type="button" class="btn-cancel">Huỷ</button>
+                  <button type="submit" class="btn-save">Lưu</button>
+                </div>
+              </form>
+            </div>
+      
+            <div class="image-preview">
+              <h3 style="margin-top: 15px;">Hình ảnh</h3>
+              <div class="img-box">
+                <img src="https://i.imgur.com/L2YO1Vd.png" alt="Sản phẩm" />
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+</html>
